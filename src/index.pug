@@ -1,0 +1,190 @@
+include includes/mixins
+
+doctype html
+block head
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no")
+		meta(name="format-detection" content="telephone=no")
+
+		link(rel="stylesheet", href="css/style.min.css")
+
+		title Title
+
+	body
+		.wrapper
+
+			header.header.container
+				a(href="#").header__logo
+					img(src="img/logo.svg", alt="" width="115" height="32")
+				.header__bar
+					ul.header__menu
+						li
+							a(href="#") Компании
+						li
+							a(href="#") Партнерам
+						li
+							a(href="#") Пресс-центр
+						li
+							a(href="#") Контакты
+					.header__lang
+						a.header__lang-btn Ru
+							span.header__lang-btn-icon
+								img(src="img/icon-expand.svg", alt="")
+						ul.header__lang-list
+							li Ru
+							li Ru
+							li Ru
+		
+			main.content
+
+				.start
+					.container.start__container
+						h1.start__heading Группа компаний Елены Скрынник
+						.start__logotypes
+							.start__logotypes-item
+								img(src="img/item-site.svg", alt="")
+							.start__logotypes-item
+								img(src="img/logo-walkbot.png", alt="")
+							.start__logotypes-item
+								img(src="img/logo-robotic_att.png", alt="")
+							.start__logotypes-item
+								img(src="img/logo-mniap.png", alt="")
+							.start__logotypes-item
+								img(src="img/logo-stemphys.png", alt="")
+					.start__bg
+						img(src="img/start-preview.jpg", alt="")
+				.projects
+					.container
+						.row.projects__top
+							.col-lg-6
+								h2.heading-base Компании
+							.col-lg-6 Проекты, реализованные нашими специалистами доказали компетентность и высокую квалификацию сотрудников, которая соответствует международным профессиональным стандартам.
+						.projects-row
+							.projects-row__col.projects-row__col--large
+								.item-project.item-project--large
+									.item-project__content
+										.item-project__heading Официальный сайт
+											br
+											| Елены Скрынник
+										p Елена Борисовна Скрынник – российский государственный деятель. Доктор экономических наук и доктор медицинских наук. 
+										.item-project__link
+											a(href="#").link-underline Узнать подробнее
+									.item-project__bg
+										img(src="img/project-img-1.jpg", alt="")
+							.projects-row__col.projects-row__col--large
+								.item-project.item-project--large
+									.item-project__content
+										.item-project__heading WALKBOT
+										p Инновационная роботизированная система восстановления навыков ходьбы для реабилитации пациентов с неврологическими патологиями и нарушениями двигательной активности.
+										.item-project__link
+											a(href="#").link-underline Узнать подробнее
+									.item-project__bg
+										img(src="img/project-img-1.jpg", alt="")
+							.projects-row__col.projects-row__col--medium
+								.item-project.item-project--base
+									.item-project__content
+										.item-project__heading Robotic-ATT
+										p Мировой лидер в лечении позвоночника. Данное оборудование используется для коррекции тела относительно его правильной осанки.
+										.item-project__link
+											a(href="#").link-underline Узнать подробнее
+									.item-project__bg
+										img(src="img/project-img-1.jpg", alt="")
+							.projects-row__col.projects-row__col--medium
+								.item-project.item-project--base
+									.item-project__content
+										.item-project__heading Институт
+											br
+											| МНИАП.РФ
+										p Трансформирует свой формат и переходит в режим института анализа инвестиционной политики с фокусом на развитие малого и среднего предпринимательства.
+										.item-project__link
+											a(href="#").link-underline Узнать подробнее
+									.item-project__bg
+										img(src="img/project-img-1.jpg", alt="")
+							.projects-row__col.projects-row__col--medium
+								.item-project.item-project--base
+									.item-project__content
+										.item-project__heading Клиника
+											br
+											| STEMPHYS
+										p Проект, который сочетает индивидуальный подход к клиенту и высокотехнологичные мировые технологии для предоставления услуг.
+										.item-project__link
+											a(href="#").link-underline Узнать подробнее
+									.item-project__bg
+										img(src="img/project-img-1.jpg", alt="")
+				.description
+					.container
+						.description__heading
+							.container Холдинг сосредотачивает усилия  на быстрорастущих направлениях.
+								br
+								| Во всех компаниях ведется контроль  качества и мы добиваемся больших результатов.
+					.description__bg
+						img(src="img/preview-bg.jpg", alt="")
+
+				.info
+					.container
+						.info__row
+							.info__main-col
+								.info-text
+									p Сосредотачивает усилия  на быстрорастущих направлениях.
+									p Во всех компаниях ведется контроль качества и мы добиваемся больших результатов.
+								.info-numbers-wrap
+									.info-numbers
+										.info-numbers__item
+											.info-numbers__value 500 000
+											.info-numbers__text Сотрудников всех компаний в холдинге
+										.info-numbers__item
+											.info-numbers__value 10,7%
+											.info-numbers__text Доля от продуктов поставщикам
+									.info-numbers
+										.info-numbers__item
+											.info-numbers__value №1 
+											.info-numbers__text Институт косметологии
+										.info-numbers__item
+											.info-numbers__value 1 000
+											.info-numbers__text Офисов по всей России
+										.info-numbers__item
+											.info-numbers__value 10,7%
+											.info-numbers__text Доля от продуктов поставщикам
+							.info__img
+								img(src="img/info-img.jpg", alt="")
+				.partners.container
+					.partners__row
+						.partners__row-main
+							.heading-base Партнерам
+							p Темпы роста, развитие компаний и другие оценки эффективности в каждом из разделов. Ключевая задача — усиливать существующие и развивать новые, глобальные и долгосрочные конкурентные преимущества России.
+							div
+								a(href="#").link-underline Узнать больше
+						.partners__row-img
+							img(src="img/partners-img.jpg", alt="")
+				.news
+					.container
+						.heading-base.news__heading Пресс-центр
+						.news-list
+							.news-item
+								.news-item__main
+									.news-item__heading МНИАП.РФ | 24.04.2022
+									p RSpectr передает слова руководителя Центра Цифровых Прав Саркиса Дарбиняна о том, что идея маркировать ИИ-контент при взаимодействии с пользователями оценивается экспертами, как положительная.
+							.news-item
+								.news-item__main
+									.news-item__heading МНИАП.РФ | 24.04.2022
+									p RSpectr передает слова руководителя Центра Цифровых Прав Саркиса Дарбиняна о том, что идея маркировать ИИ-контент при взаимодействии с пользователями оценивается экспертами, как положительная.
+							.news-item
+								.news-item__img
+									img(src="img/news-preview.jpg", alt="")
+								.news-item__main
+									.news-item__heading МНИАП.РФ | 24.04.2022
+									p RSpectr передает слова руководителя Центра Цифровых Прав Саркиса Дарбиняна о том, что идея маркировать ИИ-контент при взаимодействии с пользователями оценивается экспертами, как положительная.
+						.news-link-more
+							a(href="#").link-underline Читать еще
+				
+				footer.footer
+					.container.footer__container
+						.footer__copyright © 2024 ES group
+						.footer__adress Москва, Пресненская набережная 12, Башня «Федерация» Запад
+						.footer__other
+							a(href="#").link-underline Политика конфиденциальности
+
+
+		script(src="js/common.js")

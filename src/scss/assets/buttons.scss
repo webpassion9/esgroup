@@ -1,0 +1,24 @@
+.btn {
+	cursor: pointer;
+	text-decoration: none;
+	background: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	transition: all .25s;
+	max-width: 100%;
+	outline: none;
+	&:hover {
+		text-decoration: none;
+	}
+	&:active {
+		transition: none;
+	}
+
+	&--fullwidth {
+		width: 100%;
+	}
+
+	
+}
