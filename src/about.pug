@@ -10,6 +10,9 @@ html(lang="ru")
 
 		link(rel="stylesheet", href="css/style.min.css")
 
+		link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css")
+		link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css")
+
 		title Title
 
 	body
@@ -36,6 +39,17 @@ html(lang="ru")
 							li Ru
 							li Ru
 							li Ru
+					
+					a.btn-mobile-menu.open.is-lg-hidden
+						span
+						span
+						span
+
+				a.btn-mobile-menu.is-lg-hidden
+					span
+					span
+					span
+				
 		
 			main.content
 
@@ -65,32 +79,64 @@ html(lang="ru")
 					.section-label Заслуги
 					.content-inner
 						.achievements__heading Елена Борисовна отмечена  высшими государственными и правительственными наградами Российской Федерации:
-						.rewards
-							.rewards__item
-								.rewards__item-inner
-									.rewards__item-img
-										img(src="img/rewards-1.png", alt="")
-									.rewards__item-text Орден «За Любовь и Отечество» – За высокую духовно-нравственную позицию и милосердия. За значительный вклад в благотворительную, миротворческую и гуманитарную деятельность.
-							.rewards__item
-								.rewards__item-inner
-									.rewards__item-img
-										img(src="img/rewards-2.png", alt="")
-									.rewards__item-text Правительственная награда – Медаль Ордена «За заслуги перед Отечеством» II степени – за достигнутые трудовые успехи и многолетнюю добросовестную работу (2005 год)
-							.rewards__item
-								.rewards__item-inner
-									.rewards__item-img
-										img(src="img/rewards-3.png", alt="")
-									.rewards__item-text Орден Дружбы – за активное участие в работе по формированию нормативно-правовой базы Единого экономического пространства (2011 год)
-							.rewards__item
-								.rewards__item-inner
-									.rewards__item-img
-										img(src="img/rewards-4.png", alt="")
-									.rewards__item-text Благодарность Президента Российской Федерации (2007 год).
-							.rewards__item
-								.rewards__item-inner
-									.rewards__item-img
-										img(src="img/rewards-5.png", alt="")
-									.rewards__item-text Почётная грамота Правительства Российской Федерации – за большой вклад в развитие отечественного агропромышленного комплекса и многолетний добросовестный труд (2009 год).
+						.swiper.slider-rewards
+							.swiper-wrapper.rewards
+								.rewards__item.swiper-slide
+									.rewards__item-inner
+										.rewards__item-preview
+											img(src="img/rewards-1.png", alt="")
+										.rewards__item-img
+											img(src="img/rewards-1.png", alt="")
+										.rewards__item-text Орден «За Любовь и Отечество» – За высокую духовно-нравственную позицию и милосердия. За значительный вклад в благотворительную, миротворческую и гуманитарную деятельность.
+								.rewards__item.swiper-slide
+									.rewards__item-inner
+										.rewards__item-preview
+											img(src="img/rewards-2_large.png", alt="")
+										.rewards__item-img
+											img(src="img/rewards-2.png", alt="")
+										.rewards__item-text Правительственная награда – Медаль Ордена «За заслуги перед Отечеством» II степени – за достигнутые трудовые успехи и многолетнюю добросовестную работу (2005 год)
+								.rewards__item.swiper-slide
+									.rewards__item-inner
+										.rewards__item-preview
+											img(src="img/rewards-3_large.png", alt="")
+										.rewards__item-img
+											img(src="img/rewards-3.png", alt="")
+										.rewards__item-text Орден Дружбы – за активное участие в работе по формированию нормативно-правовой базы Единого экономического пространства (2011 год)
+								.rewards__item.swiper-slide
+									.rewards__item-inner
+										.rewards__item-preview
+											img(src="img/rewards-4_large.png", alt="")
+										.rewards__item-img
+											img(src="img/rewards-4.png", alt="")
+										.rewards__item-text Благодарность Президента Российской Федерации (2007 год).
+								.rewards__item.swiper-slide
+									.rewards__item-inner
+										.rewards__item-preview
+											img(src="img/rewards-5_large.png", alt="")
+										.rewards__item-img
+											img(src="img/rewards-5.png", alt="")
+										.rewards__item-text Почётная грамота Правительства Российской Федерации – за большой вклад в развитие отечественного агропромышленного комплекса и многолетний добросовестный труд (2009 год).
+								.rewards__item.swiper-slide
+									.rewards__item-inner
+										.rewards__item-preview
+											img(src="img/rewards-5_large.png", alt="")
+										.rewards__item-img
+											img(src="img/rewards-5.png", alt="")
+										.rewards__item-text Почётная грамота Правительства Российской Федерации – за большой вклад в развитие отечественного агропромышленного комплекса и многолетний добросовестный труд (2009 год).
+								.rewards__item.swiper-slide
+									.rewards__item-inner
+										.rewards__item-preview
+											img(src="img/rewards-5_large.png", alt="")
+										.rewards__item-img
+											img(src="img/rewards-5.png", alt="")
+										.rewards__item-text Почётная грамота Правительства Российской Федерации – за большой вклад в развитие отечественного агропромышленного комплекса и многолетний добросовестный труд (2009 год).
+								.rewards__item.swiper-slide
+									.rewards__item-inner
+										.rewards__item-preview
+											img(src="img/rewards-5_large.png", alt="")
+										.rewards__item-img
+											img(src="img/rewards-5.png", alt="")
+										.rewards__item-text Почётная грамота Правительства Российской Федерации – за большой вклад в развитие отечественного агропромышленного комплекса и многолетний добросовестный труд (2009 год).
 						.rewards-bottom-bar
 							a(href="#").link-underline Ведомственные и региональные награды
 							.rewards-nav
@@ -148,7 +194,8 @@ html(lang="ru")
 								.charity__row-col
 									.charity__row-item Также Елена Борисовна оказывает поддержку команды по парафутболу в Казани, дающую возможность чувствовать себя сильными. Команда основана на базе ГКБ № 7 г. Казани.
 							.charity__img
-								img(src="img/main-slide-bg.jpg", alt="")
+								video(loop muted poster="img/main-slide-bg.jpg")#video
+									source(src="video/walkbot.mp4" type="video/mp4")
 							.charity__link
 								a(href="#").link-underline Узнать подробнее о WALKBOT 
 				.future.section.container#future
@@ -170,29 +217,54 @@ html(lang="ru")
 					.container
 						.section-label Публикации
 						.content-inner
-							.publications__row
-								.publications__row-col
-									.publications__item
-										.publications__item-img
-											img(src="img/Elena-Skrynnik-Karavan.jpg", alt="")
-										.publications__item-info
-											.publications__item-info-top
-												.publications__item-info-heading Караван историй
-												.publications__item-info-year 2024
-											.publications__item-info-text
-												p История успеха Елены Скрынник. Как говорится в «Искусстве войны», «Непобедимость — в себе, возможность победы — во враге».
-								.publications__row-col
-									.publications__item
-										.publications__item-img
-											img(src="img/Elena-Skrynnik-Brics-Magazine.jpg", alt="")
-										.publications__item-info
-											.publications__item-info-top
-												.publications__item-info-heading BRICS
-												.publications__item-info-year 2020
-											.publications__item-info-text
-												p Елена Скрынник:  Наша главная стратегическая цель – высокий инновационный уровень российской экономики.
-											.publications__item-info-link
-												a(href="#") Читать статью
+							.slider-publications.swiper
+								.publications__row.swiper-wrapper
+									.publications__row-col.swiper-slide
+										.publications__item
+											.publications__item-img
+												img(src="img/Elena-Skrynnik-Karavan.jpg", alt="")
+											.publications__item-info
+												.publications__item-info-top
+													.publications__item-info-heading Караван историй
+													.publications__item-info-year 2024
+												.publications__item-info-text
+													p История успеха Елены Скрынник. Как говорится в «Искусстве войны», «Непобедимость — в себе, возможность победы — во враге».
+									.publications__row-col.swiper-slide
+										.publications__item
+											.publications__item-img
+												img(src="img/Elena-Skrynnik-Brics-Magazine.jpg", alt="")
+											.publications__item-info
+												.publications__item-info-top
+													.publications__item-info-heading BRICS
+													.publications__item-info-year 2020
+												.publications__item-info-text
+													p Елена Скрынник:  Наша главная стратегическая цель – высокий инновационный уровень российской экономики.
+												.publications__item-info-link
+													a(href="#") Читать статью
+									.publications__row-col.swiper-slide
+										.publications__item
+											.publications__item-img
+												img(src="img/Elena-Skrynnik-Brics-Magazine.jpg", alt="")
+											.publications__item-info
+												.publications__item-info-top
+													.publications__item-info-heading BRICS
+													.publications__item-info-year 2020
+												.publications__item-info-text
+													p Елена Скрынник:  Наша главная стратегическая цель – высокий инновационный уровень российской экономики.
+												.publications__item-info-link
+													a(href="#") Читать статью
+									.publications__row-col.swiper-slide
+										.publications__item
+											.publications__item-img
+												img(src="img/Elena-Skrynnik-Brics-Magazine.jpg", alt="")
+											.publications__item-info
+												.publications__item-info-top
+													.publications__item-info-heading BRICS
+													.publications__item-info-year 2020
+												.publications__item-info-text
+													p Елена Скрынник:  Наша главная стратегическая цель – высокий инновационный уровень российской экономики.
+												.publications__item-info-link
+													a(href="#") Читать статью
 							.publications__nav
 								a.publications__nav-btn.publications__nav-btn--prev
 									img(src="img/icon-arrow-left.svg", alt="")
@@ -202,32 +274,32 @@ html(lang="ru")
 				.gallery.container
 					.gallery__row
 						.gallery__row-col
-							.gallery__row-col-item
+							a(href="img/Slide 4_3 - 34.jpg" data-fancybox="gallery").gallery__row-col-item
 								img(src="img/Slide 4_3 - 34.jpg", alt="")
-							.gallery__row-col-item
+							a(href="img/Slide 4_3 - 27.jpg" data-fancybox="gallery").gallery__row-col-item
 								img(src="img/Slide 4_3 - 27.jpg", alt="")
-							.gallery__row-col-item
+							a(href="img/Slide 4_3 - 32.jpg" data-fancybox="gallery").gallery__row-col-item
 								img(src="img/Slide 4_3 - 32.jpg", alt="")
 						.gallery__row-col
-							.gallery__row-col-item
+							a(href="img/Slide 4_3 - 37.jpg" data-fancybox="gallery").gallery__row-col-item
 								img(src="img/Slide 4_3 - 37.jpg", alt="")
-							.gallery__row-col-item
+							a(href="img/Slide 4_3 - 36.jpg" data-fancybox="gallery").gallery__row-col-item
 								img(src="img/Slide 4_3 - 36.jpg", alt="")
-							.gallery__row-col-item
+							a(href="img/Slide 4_3 - 38.jpg" data-fancybox="gallery").gallery__row-col-item
 								img(src="img/Slide 4_3 - 38.jpg", alt="")
 						.gallery__row-col
-							.gallery__row-col-item
+							a(href="img/Slide 4_3 - 29.jpg" data-fancybox="gallery").gallery__row-col-item
 								img(src="img/Slide 4_3 - 29.jpg", alt="")
-							.gallery__row-col-item
+							a(href="img/Slide 4_3 - 35.jpg" data-fancybox="gallery").gallery__row-col-item
 								img(src="img/Slide 4_3 - 35.jpg", alt="")
-							.gallery__row-col-item
+							a(href="img/Slide 4_3 - 31.jpg" data-fancybox="gallery").gallery__row-col-item
 								img(src="img/Slide 4_3 - 31.jpg", alt="")
 						.gallery__row-col
-							.gallery__row-col-item
+							a(href="img/Slide 4_3 - 30.jpg" data-fancybox="gallery").gallery__row-col-item
 								img(src="img/Slide 4_3 - 30.jpg", alt="")
-							.gallery__row-col-item
+							a(href="img/Slide 4_3 - 33.jpg" data-fancybox="gallery").gallery__row-col-item
 								img(src="img/Slide 4_3 - 33.jpg", alt="")
-							.gallery__row-col-item
+							a(href="img/Slide 4_3 - 28.jpg" data-fancybox="gallery").gallery__row-col-item
 								img(src="img/Slide 4_3 - 28.jpg", alt="")
 				footer.footer
 					.container.footer__container
@@ -238,6 +310,8 @@ html(lang="ru")
 
 
 		script(src="js/common.js")
+		script(src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js")
+		script(src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js")
 		script.
 			document.addEventListener('DOMContentLoaded', () => {
 				const rewardItems = document.querySelectorAll('.rewards__item');
@@ -300,5 +374,77 @@ html(lang="ru")
 			});
 
 
+			// swiper
+
+			document.addEventListener('DOMContentLoaded', () => {
+				var swiperRewards = new Swiper('.slider-rewards', {
+						slidesPerView: 'auto',
+						navigation: {
+								nextEl: '.rewards-nav__btn--next',
+								prevEl: '.rewards-nav__btn--prev',
+						},
+						breakpoints: {
+								992: {
+										slidesPerView: 'auto',
+										spaceBetween: 0,
+								},
+								0: {
+										slidesPerView: 1,
+										spaceBetween: 20,
+										autoHeight: true,
+								}
+						}
+				});
+			});
+
+
+			var swiperPublication = new Swiper('.slider-publications', {
+				slidesPerView: 2,
+				spaceBetween: 20,
+				navigation: {
+					nextEl: '.publications__nav-btn--next',
+					prevEl: '.publications__nav-btn--prev',
+				},
+				breakpoints: {
+						992: {
+							slidesPerView: 2,
+							autoHeight: false
+						},
+						0: {
+							slidesPerView: 1,
+							autoHeight: true
+						}
+				}
+			});
+
+			// fancybox
+
+			Fancybox.bind("[data-fancybox]", {});
+
+
+			// video
+
+			document.addEventListener('DOMContentLoaded', () => {
+				const video = document.getElementById('video');
+
+				const playVideoOnScroll = () => {
+						const rect = video.getBoundingClientRect();
+						const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+						// Проверка, находится ли видео в видимой области экрана
+						if (rect.top <= windowHeight && rect.bottom >= 0) {
+								video.play();
+						} else {
+								video.load();
+						}
+				};
+
+				// Вызов функции при загрузке страницы и при прокрутке
+				window.addEventListener('scroll', playVideoOnScroll);
+				window.addEventListener('resize', playVideoOnScroll);
+
+				// Initial check
+				playVideoOnScroll();
+			});
 
 

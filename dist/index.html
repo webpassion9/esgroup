@@ -40,7 +40,17 @@
 							<li>Ru</li>
 						</ul>
 					</div>
+					<a class="btn-mobile-menu open is-lg-hidden">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
 				</div>
+				<a class="btn-mobile-menu is-lg-hidden">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
 			</header>
 			<main class="content">
 				<div class="start">
@@ -89,7 +99,9 @@
 										</div>
 									</div>
 									<div class="item-project__bg">
-										<img src="img/project-img-1.jpg" alt="">
+										<video loop muted poster="img/project-img-1.jpg">
+											<source src="video/walkbot.mp4" type="video/mp4">
+										</video>
 									</div>
 								</div>
 							</div>
@@ -103,7 +115,9 @@
 										</div>
 									</div>
 									<div class="item-project__bg">
-										<img src="img/project-img-1.jpg" alt="">
+										<video loop muted poster="img/project-img-1.jpg">
+											<source src="video/walkbot.mp4" type="video/mp4">
+										</video>
 									</div>
 								</div>
 							</div>
@@ -117,7 +131,9 @@
 										</div>
 									</div>
 									<div class="item-project__bg">
-										<img src="img/project-img-1.jpg" alt="">
+										<video loop muted poster="img/project-img-1.jpg">
+											<source src="video/walkbot.mp4" type="video/mp4">
+										</video>
 									</div>
 								</div>
 							</div>
@@ -133,7 +149,9 @@
 										</div>
 									</div>
 									<div class="item-project__bg">
-										<img src="img/project-img-1.jpg" alt="">
+										<video loop muted poster="img/project-img-1.jpg">
+											<source src="video/walkbot.mp4" type="video/mp4">
+										</video>
 									</div>
 								</div>
 							</div>
@@ -149,7 +167,9 @@
 										</div>
 									</div>
 									<div class="item-project__bg">
-										<img src="img/project-img-1.jpg" alt="">
+										<video loop muted poster="img/project-img-1.jpg">
+											<source src="video/walkbot.mp4" type="video/mp4">
+										</video>
 									</div>
 								</div>
 							</div>
@@ -266,5 +286,28 @@
 			</main>
 		</div>
 		<script src="js/common.js"></script>
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+				const itemProjects = document.querySelectorAll('.item-project');
+			
+				itemProjects.forEach(item => {
+						item.addEventListener('mouseenter', () => {
+								const video = item.querySelector('.item-project__bg video');
+								if (video) {
+										video.play();
+								}
+						});
+			
+						item.addEventListener('mouseleave', () => {
+								const video = item.querySelector('.item-project__bg video');
+								if (video) {
+										video.pause();
+										video.currentTime = 0;
+										video.load();
+								}
+						});
+				});
+			});
+		</script>
 	</body>
 </html>

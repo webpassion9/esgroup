@@ -70,8 +70,11 @@ video {
 .heading-base {
     font-style: normal;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 26px;
     line-height: 120%;
     letter-spacing: 0.01em;
+    @media (min-width: $lg) {
+        font-size: 40px;
+    }
 }
 

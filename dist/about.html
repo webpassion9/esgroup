@@ -5,6 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
 		<meta name="format-detection" content="telephone=no">
 		<link rel="stylesheet" href="css/style.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
 		<title>Title</title>
 	</head>
 	<body>
@@ -40,7 +42,17 @@
 							<li>Ru</li>
 						</ul>
 					</div>
+					<a class="btn-mobile-menu open is-lg-hidden">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
 				</div>
+				<a class="btn-mobile-menu is-lg-hidden">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
 			</header>
 			<main class="content">
 				<ul class="page-nav">
@@ -77,45 +89,95 @@
 					<div class="section-label">Заслуги</div>
 					<div class="content-inner">
 						<div class="achievements__heading">Елена Борисовна отмечена  высшими государственными и правительственными наградами Российской Федерации:</div>
-						<div class="rewards">
-							<div class="rewards__item">
-								<div class="rewards__item-inner">
-									<div class="rewards__item-img">
-										<img src="img/rewards-1.png" alt="">
+						<div class="swiper slider-rewards">
+							<div class="swiper-wrapper rewards">
+								<div class="rewards__item swiper-slide">
+									<div class="rewards__item-inner">
+										<div class="rewards__item-preview">
+											<img src="img/rewards-1.png" alt="">
+										</div>
+										<div class="rewards__item-img">
+											<img src="img/rewards-1.png" alt="">
+										</div>
+										<div class="rewards__item-text">Орден «За Любовь и Отечество» – За высокую духовно-нравственную позицию и милосердия. За значительный вклад в благотворительную, миротворческую и гуманитарную деятельность.</div>
 									</div>
-									<div class="rewards__item-text">Орден «За Любовь и Отечество» – За высокую духовно-нравственную позицию и милосердия. За значительный вклад в благотворительную, миротворческую и гуманитарную деятельность.</div>
 								</div>
-							</div>
-							<div class="rewards__item">
-								<div class="rewards__item-inner">
-									<div class="rewards__item-img">
-										<img src="img/rewards-2.png" alt="">
+								<div class="rewards__item swiper-slide">
+									<div class="rewards__item-inner">
+										<div class="rewards__item-preview">
+											<img src="img/rewards-2_large.png" alt="">
+										</div>
+										<div class="rewards__item-img">
+											<img src="img/rewards-2.png" alt="">
+										</div>
+										<div class="rewards__item-text">Правительственная награда – Медаль Ордена «За заслуги перед Отечеством» II степени – за достигнутые трудовые успехи и многолетнюю добросовестную работу (2005 год)</div>
 									</div>
-									<div class="rewards__item-text">Правительственная награда – Медаль Ордена «За заслуги перед Отечеством» II степени – за достигнутые трудовые успехи и многолетнюю добросовестную работу (2005 год)</div>
 								</div>
-							</div>
-							<div class="rewards__item">
-								<div class="rewards__item-inner">
-									<div class="rewards__item-img">
-										<img src="img/rewards-3.png" alt="">
+								<div class="rewards__item swiper-slide">
+									<div class="rewards__item-inner">
+										<div class="rewards__item-preview">
+											<img src="img/rewards-3_large.png" alt="">
+										</div>
+										<div class="rewards__item-img">
+											<img src="img/rewards-3.png" alt="">
+										</div>
+										<div class="rewards__item-text">Орден Дружбы – за активное участие в работе по формированию нормативно-правовой базы Единого экономического пространства (2011 год)</div>
 									</div>
-									<div class="rewards__item-text">Орден Дружбы – за активное участие в работе по формированию нормативно-правовой базы Единого экономического пространства (2011 год)</div>
 								</div>
-							</div>
-							<div class="rewards__item">
-								<div class="rewards__item-inner">
-									<div class="rewards__item-img">
-										<img src="img/rewards-4.png" alt="">
+								<div class="rewards__item swiper-slide">
+									<div class="rewards__item-inner">
+										<div class="rewards__item-preview">
+											<img src="img/rewards-4_large.png" alt="">
+										</div>
+										<div class="rewards__item-img">
+											<img src="img/rewards-4.png" alt="">
+										</div>
+										<div class="rewards__item-text">Благодарность Президента Российской Федерации (2007 год).</div>
 									</div>
-									<div class="rewards__item-text">Благодарность Президента Российской Федерации (2007 год).</div>
 								</div>
-							</div>
-							<div class="rewards__item">
-								<div class="rewards__item-inner">
-									<div class="rewards__item-img">
-										<img src="img/rewards-5.png" alt="">
+								<div class="rewards__item swiper-slide">
+									<div class="rewards__item-inner">
+										<div class="rewards__item-preview">
+											<img src="img/rewards-5_large.png" alt="">
+										</div>
+										<div class="rewards__item-img">
+											<img src="img/rewards-5.png" alt="">
+										</div>
+										<div class="rewards__item-text">Почётная грамота Правительства Российской Федерации – за большой вклад в развитие отечественного агропромышленного комплекса и многолетний добросовестный труд (2009 год).</div>
 									</div>
-									<div class="rewards__item-text">Почётная грамота Правительства Российской Федерации – за большой вклад в развитие отечественного агропромышленного комплекса и многолетний добросовестный труд (2009 год).</div>
+								</div>
+								<div class="rewards__item swiper-slide">
+									<div class="rewards__item-inner">
+										<div class="rewards__item-preview">
+											<img src="img/rewards-5_large.png" alt="">
+										</div>
+										<div class="rewards__item-img">
+											<img src="img/rewards-5.png" alt="">
+										</div>
+										<div class="rewards__item-text">Почётная грамота Правительства Российской Федерации – за большой вклад в развитие отечественного агропромышленного комплекса и многолетний добросовестный труд (2009 год).</div>
+									</div>
+								</div>
+								<div class="rewards__item swiper-slide">
+									<div class="rewards__item-inner">
+										<div class="rewards__item-preview">
+											<img src="img/rewards-5_large.png" alt="">
+										</div>
+										<div class="rewards__item-img">
+											<img src="img/rewards-5.png" alt="">
+										</div>
+										<div class="rewards__item-text">Почётная грамота Правительства Российской Федерации – за большой вклад в развитие отечественного агропромышленного комплекса и многолетний добросовестный труд (2009 год).</div>
+									</div>
+								</div>
+								<div class="rewards__item swiper-slide">
+									<div class="rewards__item-inner">
+										<div class="rewards__item-preview">
+											<img src="img/rewards-5_large.png" alt="">
+										</div>
+										<div class="rewards__item-img">
+											<img src="img/rewards-5.png" alt="">
+										</div>
+										<div class="rewards__item-text">Почётная грамота Правительства Российской Федерации – за большой вклад в развитие отечественного агропромышленного комплекса и многолетний добросовестный труд (2009 год).</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -203,7 +265,9 @@
 								</div>
 							</div>
 							<div class="charity__img">
-								<img src="img/main-slide-bg.jpg" alt="">
+								<video loop muted poster="img/main-slide-bg.jpg" id="video">
+									<source src="video/walkbot.mp4" type="video/mp4">
+								</video>
 							</div>
 							<div class="charity__link">
 								<a class="link-underline" href="#">Узнать подробнее о WALKBOT </a>
@@ -239,38 +303,78 @@
 					<div class="container">
 						<div class="section-label">Публикации</div>
 						<div class="content-inner">
-							<div class="publications__row">
-								<div class="publications__row-col">
-									<div class="publications__item">
-										<div class="publications__item-img">
-											<img src="img/Elena-Skrynnik-Karavan.jpg" alt="">
-										</div>
-										<div class="publications__item-info">
-											<div class="publications__item-info-top">
-												<div class="publications__item-info-heading">Караван историй</div>
-												<div class="publications__item-info-year">2024</div>
+							<div class="slider-publications swiper">
+								<div class="publications__row swiper-wrapper">
+									<div class="publications__row-col swiper-slide">
+										<div class="publications__item">
+											<div class="publications__item-img">
+												<img src="img/Elena-Skrynnik-Karavan.jpg" alt="">
 											</div>
-											<div class="publications__item-info-text">
-												<p>История успеха Елены Скрынник. Как говорится в «Искусстве войны», «Непобедимость — в себе, возможность победы — во враге».</p>
+											<div class="publications__item-info">
+												<div class="publications__item-info-top">
+													<div class="publications__item-info-heading">Караван историй</div>
+													<div class="publications__item-info-year">2024</div>
+												</div>
+												<div class="publications__item-info-text">
+													<p>История успеха Елены Скрынник. Как говорится в «Искусстве войны», «Непобедимость — в себе, возможность победы — во враге».</p>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="publications__row-col">
-									<div class="publications__item">
-										<div class="publications__item-img">
-											<img src="img/Elena-Skrynnik-Brics-Magazine.jpg" alt="">
+									<div class="publications__row-col swiper-slide">
+										<div class="publications__item">
+											<div class="publications__item-img">
+												<img src="img/Elena-Skrynnik-Brics-Magazine.jpg" alt="">
+											</div>
+											<div class="publications__item-info">
+												<div class="publications__item-info-top">
+													<div class="publications__item-info-heading">BRICS</div>
+													<div class="publications__item-info-year">2020</div>
+												</div>
+												<div class="publications__item-info-text">
+													<p>Елена Скрынник:  Наша главная стратегическая цель – высокий инновационный уровень российской экономики.</p>
+												</div>
+												<div class="publications__item-info-link">
+													<a href="#">Читать статью</a>
+												</div>
+											</div>
 										</div>
-										<div class="publications__item-info">
-											<div class="publications__item-info-top">
-												<div class="publications__item-info-heading">BRICS</div>
-												<div class="publications__item-info-year">2020</div>
+									</div>
+									<div class="publications__row-col swiper-slide">
+										<div class="publications__item">
+											<div class="publications__item-img">
+												<img src="img/Elena-Skrynnik-Brics-Magazine.jpg" alt="">
 											</div>
-											<div class="publications__item-info-text">
-												<p>Елена Скрынник:  Наша главная стратегическая цель – высокий инновационный уровень российской экономики.</p>
+											<div class="publications__item-info">
+												<div class="publications__item-info-top">
+													<div class="publications__item-info-heading">BRICS</div>
+													<div class="publications__item-info-year">2020</div>
+												</div>
+												<div class="publications__item-info-text">
+													<p>Елена Скрынник:  Наша главная стратегическая цель – высокий инновационный уровень российской экономики.</p>
+												</div>
+												<div class="publications__item-info-link">
+													<a href="#">Читать статью</a>
+												</div>
 											</div>
-											<div class="publications__item-info-link">
-												<a href="#">Читать статью</a>
+										</div>
+									</div>
+									<div class="publications__row-col swiper-slide">
+										<div class="publications__item">
+											<div class="publications__item-img">
+												<img src="img/Elena-Skrynnik-Brics-Magazine.jpg" alt="">
+											</div>
+											<div class="publications__item-info">
+												<div class="publications__item-info-top">
+													<div class="publications__item-info-heading">BRICS</div>
+													<div class="publications__item-info-year">2020</div>
+												</div>
+												<div class="publications__item-info-text">
+													<p>Елена Скрынник:  Наша главная стратегическая цель – высокий инновационный уровень российской экономики.</p>
+												</div>
+												<div class="publications__item-info-link">
+													<a href="#">Читать статью</a>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -290,48 +394,48 @@
 				<div class="gallery container">
 					<div class="gallery__row">
 						<div class="gallery__row-col">
-							<div class="gallery__row-col-item">
+							<a class="gallery__row-col-item" href="img/Slide 4_3 - 34.jpg" data-fancybox="gallery">
 								<img src="img/Slide 4_3 - 34.jpg" alt="">
-							</div>
-							<div class="gallery__row-col-item">
+							</a>
+							<a class="gallery__row-col-item" href="img/Slide 4_3 - 27.jpg" data-fancybox="gallery">
 								<img src="img/Slide 4_3 - 27.jpg" alt="">
-							</div>
-							<div class="gallery__row-col-item">
+							</a>
+							<a class="gallery__row-col-item" href="img/Slide 4_3 - 32.jpg" data-fancybox="gallery">
 								<img src="img/Slide 4_3 - 32.jpg" alt="">
-							</div>
+							</a>
 						</div>
 						<div class="gallery__row-col">
-							<div class="gallery__row-col-item">
+							<a class="gallery__row-col-item" href="img/Slide 4_3 - 37.jpg" data-fancybox="gallery">
 								<img src="img/Slide 4_3 - 37.jpg" alt="">
-							</div>
-							<div class="gallery__row-col-item">
+							</a>
+							<a class="gallery__row-col-item" href="img/Slide 4_3 - 36.jpg" data-fancybox="gallery">
 								<img src="img/Slide 4_3 - 36.jpg" alt="">
-							</div>
-							<div class="gallery__row-col-item">
+							</a>
+							<a class="gallery__row-col-item" href="img/Slide 4_3 - 38.jpg" data-fancybox="gallery">
 								<img src="img/Slide 4_3 - 38.jpg" alt="">
-							</div>
+							</a>
 						</div>
 						<div class="gallery__row-col">
-							<div class="gallery__row-col-item">
+							<a class="gallery__row-col-item" href="img/Slide 4_3 - 29.jpg" data-fancybox="gallery">
 								<img src="img/Slide 4_3 - 29.jpg" alt="">
-							</div>
-							<div class="gallery__row-col-item">
+							</a>
+							<a class="gallery__row-col-item" href="img/Slide 4_3 - 35.jpg" data-fancybox="gallery">
 								<img src="img/Slide 4_3 - 35.jpg" alt="">
-							</div>
-							<div class="gallery__row-col-item">
+							</a>
+							<a class="gallery__row-col-item" href="img/Slide 4_3 - 31.jpg" data-fancybox="gallery">
 								<img src="img/Slide 4_3 - 31.jpg" alt="">
-							</div>
+							</a>
 						</div>
 						<div class="gallery__row-col">
-							<div class="gallery__row-col-item">
+							<a class="gallery__row-col-item" href="img/Slide 4_3 - 30.jpg" data-fancybox="gallery">
 								<img src="img/Slide 4_3 - 30.jpg" alt="">
-							</div>
-							<div class="gallery__row-col-item">
+							</a>
+							<a class="gallery__row-col-item" href="img/Slide 4_3 - 33.jpg" data-fancybox="gallery">
 								<img src="img/Slide 4_3 - 33.jpg" alt="">
-							</div>
-							<div class="gallery__row-col-item">
+							</a>
+							<a class="gallery__row-col-item" href="img/Slide 4_3 - 28.jpg" data-fancybox="gallery">
 								<img src="img/Slide 4_3 - 28.jpg" alt="">
-							</div>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -347,6 +451,8 @@
 			</main>
 		</div>
 		<script src="js/common.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 		<script>
 			document.addEventListener('DOMContentLoaded', () => {
 				const rewardItems = document.querySelectorAll('.rewards__item');
@@ -406,6 +512,80 @@
 						updateActiveNav();
 						updateNavVisibility();
 				});
+			});
+			
+			
+			// swiper
+			
+			document.addEventListener('DOMContentLoaded', () => {
+				var swiperRewards = new Swiper('.slider-rewards', {
+						slidesPerView: 'auto',
+						navigation: {
+								nextEl: '.rewards-nav__btn--next',
+								prevEl: '.rewards-nav__btn--prev',
+						},
+						breakpoints: {
+								992: {
+										slidesPerView: 'auto',
+										spaceBetween: 0,
+								},
+								0: {
+										slidesPerView: 1,
+										spaceBetween: 20,
+										autoHeight: true,
+								}
+						}
+				});
+			});
+			
+			
+			var swiperPublication = new Swiper('.slider-publications', {
+				slidesPerView: 2,
+				spaceBetween: 20,
+				navigation: {
+					nextEl: '.publications__nav-btn--next',
+					prevEl: '.publications__nav-btn--prev',
+				},
+				breakpoints: {
+						992: {
+							slidesPerView: 2,
+							autoHeight: false
+						},
+						0: {
+							slidesPerView: 1,
+							autoHeight: true
+						}
+				}
+			});
+			
+			// fancybox
+			
+			Fancybox.bind("[data-fancybox]", {});
+			
+			
+			// video
+			
+			document.addEventListener('DOMContentLoaded', () => {
+				const video = document.getElementById('video');
+			
+				const playVideoOnScroll = () => {
+						const rect = video.getBoundingClientRect();
+						const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+			
+						// Проверка, находится ли видео в видимой области экрана
+						if (rect.top <= windowHeight && rect.bottom >= 0) {
+								video.play();
+						} else {
+								video.load();
+						}
+				};
+			
+				// Вызов функции при загрузке страницы и при прокрутке
+				window.addEventListener('scroll', playVideoOnScroll);
+				window.addEventListener('resize', playVideoOnScroll);
+			
+				// Initial check
+				playVideoOnScroll();
 			});
 		</script>
 	</body>

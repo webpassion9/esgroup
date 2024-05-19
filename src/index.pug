@@ -36,6 +36,16 @@ html(lang="ru")
 							li Ru
 							li Ru
 							li Ru
+					
+					a.btn-mobile-menu.open.is-lg-hidden
+						span
+						span
+						span
+
+				a.btn-mobile-menu.is-lg-hidden
+					span
+					span
+					span
 		
 			main.content
 
@@ -72,7 +82,8 @@ html(lang="ru")
 										.item-project__link
 											a(href="#").link-underline Узнать подробнее
 									.item-project__bg
-										img(src="img/project-img-1.jpg", alt="")
+										video(loop muted poster="img/project-img-1.jpg")
+											source(src="video/walkbot.mp4" type="video/mp4")
 							.projects-row__col.projects-row__col--large
 								.item-project.item-project--large
 									.item-project__content
@@ -81,7 +92,8 @@ html(lang="ru")
 										.item-project__link
 											a(href="#").link-underline Узнать подробнее
 									.item-project__bg
-										img(src="img/project-img-1.jpg", alt="")
+										video(loop muted poster="img/project-img-1.jpg")
+											source(src="video/walkbot.mp4" type="video/mp4")
 							.projects-row__col.projects-row__col--medium
 								.item-project.item-project--base
 									.item-project__content
@@ -90,7 +102,8 @@ html(lang="ru")
 										.item-project__link
 											a(href="#").link-underline Узнать подробнее
 									.item-project__bg
-										img(src="img/project-img-1.jpg", alt="")
+										video(loop muted poster="img/project-img-1.jpg")
+											source(src="video/walkbot.mp4" type="video/mp4")
 							.projects-row__col.projects-row__col--medium
 								.item-project.item-project--base
 									.item-project__content
@@ -101,7 +114,8 @@ html(lang="ru")
 										.item-project__link
 											a(href="#").link-underline Узнать подробнее
 									.item-project__bg
-										img(src="img/project-img-1.jpg", alt="")
+										video(loop muted poster="img/project-img-1.jpg")
+											source(src="video/walkbot.mp4" type="video/mp4")
 							.projects-row__col.projects-row__col--medium
 								.item-project.item-project--base
 									.item-project__content
@@ -112,7 +126,8 @@ html(lang="ru")
 										.item-project__link
 											a(href="#").link-underline Узнать подробнее
 									.item-project__bg
-										img(src="img/project-img-1.jpg", alt="")
+										video(loop muted poster="img/project-img-1.jpg")
+											source(src="video/walkbot.mp4" type="video/mp4")
 				.description
 					.container
 						.description__heading
@@ -188,3 +203,27 @@ html(lang="ru")
 
 
 		script(src="js/common.js")
+
+		script.
+
+			document.addEventListener('DOMContentLoaded', () => {
+				const itemProjects = document.querySelectorAll('.item-project');
+
+				itemProjects.forEach(item => {
+						item.addEventListener('mouseenter', () => {
+								const video = item.querySelector('.item-project__bg video');
+								if (video) {
+										video.play();
+								}
+						});
+
+						item.addEventListener('mouseleave', () => {
+								const video = item.querySelector('.item-project__bg video');
+								if (video) {
+										video.pause();
+										video.currentTime = 0;
+										video.load();
+								}
+						});
+				});
+			});

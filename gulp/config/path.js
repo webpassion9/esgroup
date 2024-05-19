@@ -12,7 +12,7 @@ export const path = {
         html: `${buildFolder}/`,
         images: `${buildFolder}/img/`,
         fonts: `${buildFolder}/fonts/`,
-        files: `${buildFolder}/files/`,
+        files: `${buildFolder}/video/`,
         favicon: `${buildFolder}/`
     },
     src: {
@@ -24,7 +24,7 @@ export const path = {
         images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,ico,webp}`,
         svg: `${srcFolder}/img/**/*.svg`,
         html: `${srcFolder}/*.{pug,html}`,
-        files: `${srcFolder}/files/**/*.*`,
+        files: `${srcFolder}/video/**/*.*`,
         svgicons: `${srcFolder}/svgicons/*.svg`,
         favicon: `${srcFolder}/favicon-files/**/*.*`
     },
@@ -33,7 +33,7 @@ export const path = {
         images: `${srcFolder}/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}`,
         scss: `${srcFolder}/scss/**/*.scss`,
         html: `${srcFolder}/**/*.{pug,html}`,
-        files: `${srcFolder}/files/**/*.*`,
+        files: `${srcFolder}/video/**/*.*`,
         svgicons: `${srcFolder}/svgicons/*.svg`,
         favicon: `${srcFolder}/favicon-files/**/*.*`
     },
