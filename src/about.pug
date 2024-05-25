@@ -36,9 +36,12 @@ html(lang="ru")
 							span.header__lang-btn-icon
 								img(src="img/icon-expand.svg", alt="")
 						ul.header__lang-list
-							li Ru
-							li Ru
-							li Ru
+							li
+								a(href="#") Ru
+							li
+								a(href="#") Ru
+							li
+								a(href="#") Ru
 					
 					a.btn-mobile-menu.open.is-lg-hidden
 						span
@@ -67,10 +70,11 @@ html(lang="ru")
 
 				.about-start.section#about
 					.container
-						.about-start__top-heading Российский государственный деятель
-						h1.about-start__heading Елена Борисовна
-							br
-							| Скрынник
+						.about-start__top
+							.about-start__top-heading Российский государственный деятель
+							h1.about-start__heading Елена Борисовна
+								br
+								| Скрынник
 						.about-info
 							.about-info__item Министр сельского хозяйства Российской Федерации  в период 2009&nbsp;—&nbsp;2012 гг.
 							.about-info__item Единственная женщина на посту министра сельского хозяйства России
@@ -202,17 +206,33 @@ html(lang="ru")
 					.section-label взгляд в будущее
 					.content-inner
 						.future__heading Продолжать свое дело - вносить максимальный вклад в развитие нашей страны, общества, помогать людям
-						.future__row
-							.future__row-col
-								.future__row-item-img
-									img(src="img/8650be14d97772cc4955.jpg", alt="")
-								.future__row-item-text
-									p Активно содействовать дальнейшему развитию системы медицинской реабилитации, протезирования. В планах выйти на совместное производство совершенных моделей колясок для инвалидов, с возможностью вертикализации пациентов. 
-							.future__row-col
-								.future__row-item-img
-									img(src="img/foto3-1.jpg", alt="")
-								.future__row-item-text
-									p Вести благотворительную деятельность парафутбол Казань.  Планируется приобретение футбольных колясок с электроприводом для дальнейших регулярных тренировок и соревнований.
+						.swiper.slider-future
+							.swiper-wrapper.future__row
+								.future__row-col.swiper-slide
+									.future__row-item-img
+										img(src="img/8650be14d97772cc4955.jpg", alt="")
+									.future__row-item-text
+										p Активно содействовать дальнейшему развитию системы медицинской реабилитации, протезирования. В планах выйти на совместное производство совершенных моделей колясок для инвалидов, с возможностью вертикализации пациентов. 
+								.future__row-col.swiper-slide
+									.future__row-item-img
+										img(src="img/foto3-1.jpg", alt="")
+									.future__row-item-text
+										p Вести благотворительную деятельность парафутбол Казань.  Планируется приобретение футбольных колясок с электроприводом для дальнейших регулярных тренировок и соревнований.
+								.future__row-col.swiper-slide
+									.future__row-item-img
+										img(src="img/8650be14d97772cc4955.jpg", alt="")
+									.future__row-item-text
+										p Активно содействовать дальнейшему развитию системы медицинской реабилитации, протезирования. В планах выйти на совместное производство совершенных моделей колясок для инвалидов, с возможностью вертикализации пациентов. 
+								.future__row-col.swiper-slide
+									.future__row-item-img
+										img(src="img/foto3-1.jpg", alt="")
+									.future__row-item-text
+										p Вести благотворительную деятельность парафутбол Казань.  Планируется приобретение футбольных колясок с электроприводом для дальнейших регулярных тренировок и соревнований.
+						.future__nav
+							a.future__nav-btn.future__nav-btn--prev
+								img(src="img/icon-arrow-left.svg", alt="")
+							a.future__nav-btn.future__nav-btn--next
+								img(src="img/icon-arrow-right.svg", alt="")
 				.publications.section#publications
 					.container
 						.section-label Публикации
@@ -240,7 +260,7 @@ html(lang="ru")
 												.publications__item-info-text
 													p Елена Скрынник:  Наша главная стратегическая цель – высокий инновационный уровень российской экономики.
 												.publications__item-info-link
-													a(href="#") Читать статью
+													a(href="#").link-underline Читать статью
 									.publications__row-col.swiper-slide
 										.publications__item
 											.publications__item-img
@@ -252,7 +272,7 @@ html(lang="ru")
 												.publications__item-info-text
 													p Елена Скрынник:  Наша главная стратегическая цель – высокий инновационный уровень российской экономики.
 												.publications__item-info-link
-													a(href="#") Читать статью
+													a(href="#").link-underline Читать статью
 									.publications__row-col.swiper-slide
 										.publications__item
 											.publications__item-img
@@ -264,7 +284,7 @@ html(lang="ru")
 												.publications__item-info-text
 													p Елена Скрынник:  Наша главная стратегическая цель – высокий инновационный уровень российской экономики.
 												.publications__item-info-link
-													a(href="#") Читать статью
+													a(href="#").link-underline Читать статью
 							.publications__nav
 								a.publications__nav-btn.publications__nav-btn--prev
 									img(src="img/icon-arrow-left.svg", alt="")
@@ -329,10 +349,12 @@ html(lang="ru")
 				});
 			});
 
+			// floating nav
 			document.addEventListener('DOMContentLoaded', () => {
 				const navLinks = document.querySelectorAll('.page-nav a');
 				const sections = Array.from(document.querySelectorAll('.section')).filter(section => section.id);
 				const pageNav = document.querySelector('.page-nav');
+				const lastSection = sections[sections.length - 1];
 
 				const updateActiveNav = () => {
 						let currentSection = '';
@@ -355,7 +377,12 @@ html(lang="ru")
 				};
 
 				const updateNavVisibility = () => {
-						if (window.scrollY > 150) {
+						const lastSectionRect = lastSection.getBoundingClientRect();
+
+						if (lastSectionRect.bottom < window.innerHeight) {
+								pageNav.style.opacity = '0';
+								pageNav.style.visibility = 'hidden';
+						} else if (window.scrollY > 200) {
 								pageNav.style.opacity = '1';
 								pageNav.style.visibility = 'visible';
 						} else {
@@ -374,11 +401,13 @@ html(lang="ru")
 			});
 
 
+
+
+
 			// swiper
 
 			document.addEventListener('DOMContentLoaded', () => {
 				var swiperRewards = new Swiper('.slider-rewards', {
-						slidesPerView: 'auto',
 						navigation: {
 								nextEl: '.rewards-nav__btn--next',
 								prevEl: '.rewards-nav__btn--prev',
@@ -393,10 +422,45 @@ html(lang="ru")
 										spaceBetween: 20,
 										autoHeight: true,
 								}
+						},
+						on: {
+								init: function () {
+										this.update();
+								}
 						}
+				});
+
+				window.addEventListener('load', () => {
+						swiperRewards.update();
+				});
+
+				window.addEventListener('resize', () => {
+						swiperRewards.update();
 				});
 			});
 
+			
+			var swiperFuture = new Swiper('.slider-future', {
+				slidesPerView: 2,
+				spaceBetween: 20,
+				navigation: {
+					nextEl: '.future__nav-btn--next',
+					prevEl: '.future__nav-btn--prev',
+				},
+				breakpoints: {
+						992: {
+							spaceBetween: 20
+						},
+						480: {
+							slidesPerView: 2,
+							spaceBetween: 10
+						},
+						0: {
+							slidesPerView: 1,
+							spaceBetween: 10
+						}
+				}
+			});
 
 			var swiperPublication = new Swiper('.slider-publications', {
 				slidesPerView: 2,
@@ -407,20 +471,18 @@ html(lang="ru")
 				},
 				breakpoints: {
 						992: {
+							spaceBetween: 20
+						},
+						480: {
 							slidesPerView: 2,
-							autoHeight: false
+							spaceBetween: 10
 						},
 						0: {
 							slidesPerView: 1,
-							autoHeight: true
+							spaceBetween: 10
 						}
 				}
 			});
-
-			// fancybox
-
-			Fancybox.bind("[data-fancybox]", {});
-
 
 			// video
 

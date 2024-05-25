@@ -100,6 +100,8 @@
 	&__lang {
 		position: relative;
 		&-btn {
+			display: flex;
+			align-items: center;
 			font-weight: 500;
 			font-size: 14px;
 			line-height: 150%;
@@ -111,7 +113,10 @@
 			}
 			&-icon {
 				line-height: 0;
-				margin-left: 4px;
+				margin-left: 8px;
+				transition: .2s;
+
+				display: inline-flex;
 			}
 		}
 		&-list {
@@ -127,20 +132,34 @@
 
 			opacity: 0;
 			visibility: hidden;
-			transition: .5s;
+			transition: .4s;
+			transform: translateY(-15px);
 			&>li {
-				padding: 3px 10px;
 				cursor: pointer;
-				text-transform: uppercase;
+				&>a {
+					display: block;
+					text-decoration: none;
+					padding: 5px 15px;
+					text-transform: uppercase;
+					&:hover {
+						background: darken(#E9E8E4, 5%);
+					}
+				}
 			}
 		}
-
-		&:hover {
+		
+		&.active {
 			.header {
 				&__lang {
+					&-btn {
+						&-icon {
+							transform: rotate(180deg);
+						}
+					}
 					&-list {
 						opacity: 1;
 						visibility: visible;
+						transform: translateY(0);
 					}
 				}
 			}

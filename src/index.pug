@@ -9,6 +9,7 @@ html(lang="ru")
 		meta(name="format-detection" content="telephone=no")
 
 		link(rel="stylesheet", href="css/style.min.css")
+		link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css")
 
 		title Title
 
@@ -33,9 +34,12 @@ html(lang="ru")
 							span.header__lang-btn-icon
 								img(src="img/icon-expand.svg", alt="")
 						ul.header__lang-list
-							li Ru
-							li Ru
-							li Ru
+							li
+								a(href="#") Ru
+							li
+								a(href="#") Ru
+							li
+								a(href="#") Ru
 					
 					a.btn-mobile-menu.open.is-lg-hidden
 						span
@@ -83,7 +87,7 @@ html(lang="ru")
 											a(href="#").link-underline Узнать подробнее
 									.item-project__bg
 										video(loop muted poster="img/project-img-1.jpg")
-											source(src="video/walkbot.mp4" type="video/mp4")
+											source(src="video/Eskrynnik.mp4" type="video/mp4")
 							.projects-row__col.projects-row__col--large
 								.item-project.item-project--large
 									.item-project__content
@@ -103,7 +107,7 @@ html(lang="ru")
 											a(href="#").link-underline Узнать подробнее
 									.item-project__bg
 										video(loop muted poster="img/project-img-1.jpg")
-											source(src="video/walkbot.mp4" type="video/mp4")
+											source(src="video/Robotic.mp4" type="video/mp4")
 							.projects-row__col.projects-row__col--medium
 								.item-project.item-project--base
 									.item-project__content
@@ -127,7 +131,7 @@ html(lang="ru")
 											a(href="#").link-underline Узнать подробнее
 									.item-project__bg
 										video(loop muted poster="img/project-img-1.jpg")
-											source(src="video/walkbot.mp4" type="video/mp4")
+											source(src="video/Stemphys.mp4" type="video/mp4")
 				.description
 					.container
 						.description__heading
@@ -186,8 +190,13 @@ html(lang="ru")
 									.news-item__heading МНИАП.РФ | 24.04.2022
 									p RSpectr передает слова руководителя Центра Цифровых Прав Саркиса Дарбиняна о том, что идея маркировать ИИ-контент при взаимодействии с пользователями оценивается экспертами, как положительная.
 							.news-item
-								.news-item__img
+								a(href="img/news-preview.jpg" data-fancybox="gallery-press_1").news-item__img
 									img(src="img/news-preview.jpg", alt="")
+								// Если нужно больше фото добавить их в div ниже
+								div(hidden)
+									a(href="img/news-preview.jpg" data-fancybox="gallery-press_1")
+									a(href="img/news-preview.jpg" data-fancybox="gallery-press_1")
+									a(href="img/news-preview.jpg" data-fancybox="gallery-press_1")
 								.news-item__main
 									.news-item__heading МНИАП.РФ | 24.04.2022
 									p RSpectr передает слова руководителя Центра Цифровых Прав Саркиса Дарбиняна о том, что идея маркировать ИИ-контент при взаимодействии с пользователями оценивается экспертами, как положительная.
@@ -202,6 +211,7 @@ html(lang="ru")
 							a(href="#").link-underline Политика конфиденциальности
 
 
+		script(src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js")
 		script(src="js/common.js")
 
 		script.

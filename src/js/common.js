@@ -16,3 +16,29 @@ document.addEventListener('DOMContentLoaded', () => {
 			});
 	});
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+	const langContainer = document.querySelector(".header__lang");
+	const langBtn = document.querySelector(".header__lang-btn");
+
+	langBtn.addEventListener("click", function(event) {
+			event.stopPropagation();
+			langContainer.classList.toggle("active");
+	});
+
+	document.addEventListener("click", function(event) {
+			if (!langContainer.contains(event.target)) {
+					langContainer.classList.remove("active");
+			}
+	});
+
+	langList.addEventListener("click", function(event) {
+			event.stopPropagation();
+	});
+});
+
+
+// fancybox
+
+Fancybox.bind("[data-fancybox]", {});

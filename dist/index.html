@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
 		<meta name="format-detection" content="telephone=no">
 		<link rel="stylesheet" href="css/style.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
 		<title>Title</title>
 	</head>
 	<body>
@@ -35,9 +36,15 @@
 							</span>
 						</a>
 						<ul class="header__lang-list">
-							<li>Ru</li>
-							<li>Ru</li>
-							<li>Ru</li>
+							<li>
+								<a href="#">Ru</a>
+							</li>
+							<li>
+								<a href="#">Ru</a>
+							</li>
+							<li>
+								<a href="#">Ru</a>
+							</li>
 						</ul>
 					</div>
 					<a class="btn-mobile-menu open is-lg-hidden">
@@ -100,7 +107,7 @@
 									</div>
 									<div class="item-project__bg">
 										<video loop muted poster="img/project-img-1.jpg">
-											<source src="video/walkbot.mp4" type="video/mp4">
+											<source src="video/Eskrynnik.mp4" type="video/mp4">
 										</video>
 									</div>
 								</div>
@@ -132,7 +139,7 @@
 									</div>
 									<div class="item-project__bg">
 										<video loop muted poster="img/project-img-1.jpg">
-											<source src="video/walkbot.mp4" type="video/mp4">
+											<source src="video/Robotic.mp4" type="video/mp4">
 										</video>
 									</div>
 								</div>
@@ -168,7 +175,7 @@
 									</div>
 									<div class="item-project__bg">
 										<video loop muted poster="img/project-img-1.jpg">
-											<source src="video/walkbot.mp4" type="video/mp4">
+											<source src="video/Stemphys.mp4" type="video/mp4">
 										</video>
 									</div>
 								</div>
@@ -260,8 +267,14 @@
 								</div>
 							</div>
 							<div class="news-item">
-								<div class="news-item__img">
+								<a class="news-item__img" href="img/news-preview.jpg" data-fancybox="gallery-press_1">
 									<img src="img/news-preview.jpg" alt="">
+								</a>
+								<!-- Если нужно больше фото добавить их в div ниже-->
+								<div hidden>
+									<a href="img/news-preview.jpg" data-fancybox="gallery-press_1"></a>
+									<a href="img/news-preview.jpg" data-fancybox="gallery-press_1"></a>
+									<a href="img/news-preview.jpg" data-fancybox="gallery-press_1"></a>
 								</div>
 								<div class="news-item__main">
 									<div class="news-item__heading">МНИАП.РФ | 24.04.2022</div>
@@ -285,6 +298,7 @@
 				</footer>
 			</main>
 		</div>
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 		<script src="js/common.js"></script>
 		<script>
 			document.addEventListener('DOMContentLoaded', () => {
