@@ -382,8 +382,9 @@
 ///
 
 .demonstration {
-	background: #ccc;
+	position: relative;
 	border-radius: 30px;
+	overflow: hidden;
 	max-width: 1440px;
 	margin-left: auto;
 	margin-right: auto;
@@ -394,6 +395,7 @@
 	&__container {
 		position: relative;
 		padding-top: 50px;
+		z-index: 10;
 		@media (min-width: $lg) {
 			padding-top: 120px;
 		}
@@ -448,6 +450,18 @@
 	&__text-bottom {
 		color: #EAE9E4;
 		padding-top: 20px;
+	}
+	&__bg {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		img,video {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
 	}
 }
 
