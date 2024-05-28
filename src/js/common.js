@@ -33,9 +33,6 @@ document.addEventListener("DOMContentLoaded", function() {
 			}
 	});
 
-	langList.addEventListener("click", function(event) {
-			event.stopPropagation();
-	});
 });
 
 
