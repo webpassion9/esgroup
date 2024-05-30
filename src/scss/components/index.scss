@@ -93,6 +93,16 @@
 	}
 	&__top {
 		margin-bottom: 28px;
+		margin-left: -5px;
+		margin-right: -5px;
+		display: flex;
+		&-col {
+			padding-left: 5px;
+			padding-right: 5px;
+			@media (min-width: $lg) {
+				width: 50%;
+			}
+		}
 	}
 }
 
@@ -239,7 +249,16 @@
 
 .description {
 	position: relative;
-	min-height: 900px;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	@media (min-width: $lg) {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	.container {
+		position: relative;
+		z-index: 10;
+	}
 	&__bg {
 		position: absolute;
 		left: 0;
@@ -261,9 +280,7 @@
 		text-align: center;
 		color: #E9E7E4;
 		z-index: 10;
-		position: absolute;
-		left: 0;
-		bottom: 40px;
+		padding-top: 15px;
 		@media (max-width: $lg - 1px) {
 			font-size: 24px;
 		}
@@ -274,6 +291,12 @@
 			font-size: 30px;
 			
 		}
+	}
+
+	.spiral {
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
 	}
 }
 
