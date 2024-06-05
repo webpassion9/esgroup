@@ -283,6 +283,10 @@
 	}
 }
 
+video {
+	height: auto;
+}
+
 .swiper-button-disabled {
 	opacity: .5;
 	cursor: default;
@@ -418,6 +422,7 @@
 	}
 	&__spiral {
 		text-align: center;
+		transform: rotate(-90deg);
 	}
 	&__text {
 		border-radius: 20px;
