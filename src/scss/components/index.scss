@@ -96,9 +96,13 @@
 		margin-left: -5px;
 		margin-right: -5px;
 		display: flex;
+		flex-wrap: wrap;
 		&-col {
 			padding-left: 5px;
 			padding-right: 5px;
+			@media (max-width: $lg - 1px) {
+				width: 100%;
+			}
 			@media (min-width: $lg) {
 				width: 50%;
 			}
@@ -249,8 +253,7 @@
 
 .description {
 	position: relative;
-	padding-bottom: 50px;
-	padding-top: 50px;
+	padding-bottom: 20px;
 	@media (min-width: $lg) {
 		padding-top: 80px;
 		padding-bottom: 80px;
@@ -265,10 +268,22 @@
 		top:0 ;
 		width: 100%;
 		height: 100%;
+		display: flex;
+		justify-content: center;
+		overflow: hidden;
 		img, video {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
+			object-position: center 0;
+			@media (min-width: $lg) {
+				width: 1920px;
+				height: 1080px;
+			}
+			@media (min-width: 1921px) {
+				width: 2560px;
+				height: 1440px;
+			}
 		}
 
 	}
@@ -280,12 +295,16 @@
 		text-align: center;
 		color: #E9E7E4;
 		z-index: 10;
-		padding-top: 15px;
 		@media (max-width: $lg - 1px) {
-			font-size: 24px;
+			font-size: 18px;
+			padding-top: 360px;
 		}
 		@media (min-width: $lg) {
 			font-size: 24px;
+			padding-top: 700px;
+		}
+		@media (min-width: 1921px) {
+			padding-top: 900px;
 		}
 		@media (min-width: $xl) {
 			font-size: 30px;
